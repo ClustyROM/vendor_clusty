@@ -1,0 +1,3 @@
+add_lunch_combo Clusty_toro-userdebug
+add_lunch_combo Clusty_maguro-userdebug
+add_lunch_combo Clusty_galaxysmtd-userdebug
