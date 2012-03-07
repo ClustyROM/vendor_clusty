@@ -2,7 +2,7 @@ $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 $(call inherit-product, vendor/clusty/products/common.mk)
 $(call inherit-product, vendor/clusty/products/common_phone.mk)
 
-PRODUCT_NAME := clusty_maguro
+PRODUCT_NAME := Clusty_maguro
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
@@ -11,7 +11,7 @@ PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=yakju \
     BUILD_ID=IML74K \
-    BUILD_DISPLAY_ID=ClustyROM-MAGURO \
+    BUILD_DISPLAY_ID=ClustyROM-maguro \
     BUILD_FINGERPRINT="google/yakju/maguro:4.0.2/ICL53F/235179:user/release-keys" \
     PRIVATE_BUILD_DESC="yakju-user 4.0.2 ICL53F 235179 release-keys"
 
