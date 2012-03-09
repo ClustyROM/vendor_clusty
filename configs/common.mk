@@ -25,9 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/clusty/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
     vendor/clusty/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
     vendor/clusty/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
-    vendor/clusty/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
-    vendor/clusty/prebuilt/common/app/UnicornPorn.apk:system/app/UnicornPorn.apk
-
+    vendor/clusty/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 # init.d
 PRODUCT_COPY_FILES += \
     vendor/clusty/prebuilt/common/etc/init.d/_placeholder_:system/etc/init.d/_placeholder_ \
