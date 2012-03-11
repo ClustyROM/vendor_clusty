@@ -5,7 +5,7 @@ PRODUCT_PACKAGES += \
     MusicFX \
     MusicVisualization \
     NoiseField \
-    ROMControl \
+    ClustyControl \
     su
 
 PRODUCT_PROPERTY_OVERRIDES += \
