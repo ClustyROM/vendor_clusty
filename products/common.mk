@@ -3,9 +3,6 @@ PODUCT_BRAND := Clusty
 PRODUCT_DEVICE := generic
 
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=Kejar31
-
 # stadard clusty packages 
 PRODUCT_PACKAGES := \
     Camera \
@@ -126,7 +123,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.android.wifi-watchlist=GoogleGuest \
+    ro.com.android.wifi-watchlist=FreeWifi \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.setupwizard.enterprise_mode=1 \
     ro.modversion=clusty \
