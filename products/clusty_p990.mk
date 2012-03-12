@@ -8,6 +8,7 @@ $(call inherit-product, vendor/clusty/configs/common_phone.mk)
 $(call inherit-product, vendor/clusty/configs/gsm.mk)
 
 # p990 overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/clusty/overlay/star-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := clusty_p990
