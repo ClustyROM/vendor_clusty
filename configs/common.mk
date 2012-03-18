@@ -6,7 +6,8 @@ PRODUCT_PACKAGES += \
     MusicVisualization \
     NoiseField \
     ClustyControl \
-    su
+    su \
+    AppWidgetPicker
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
