@@ -28,7 +28,29 @@ PRODUCT_COPY_FILES += \
     vendor/clusty/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 # init.d
 PRODUCT_COPY_FILES += \
-    vendor/clusty/prebuilt/common/etc/init.d/_placeholder_:system/etc/init.d/_placeholder_ \
+    vendor/clusty/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/clusty/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+    vendor/clusty/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+    vendor/clusty/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/clusty/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
+    vendor/clusty/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
+    vendor/clusty/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+    vendor/clusty/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/clusty/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/clusty/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/clusty/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
+    vendor/clusty/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
+    vendor/clusty/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
+    
+# Cron
+PRODUCT_COPY_FILES += \
+    vendor/clusty/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
+    vendor/clusty/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
+    vendor/clusty/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
+    vendor/clusty/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
+    vendor/clusty/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
+    vendor/clusty/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
+    vendor/clusty/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
 
 # Adding files needed for extra camera features
 PRODUCT_COPY_FILES += \
