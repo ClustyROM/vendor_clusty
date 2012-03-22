@@ -88,7 +88,7 @@ fi
 if [ -e "$1" ];
 then
     NAME=`basename $1`;
-    echo "Optimizing $NAME...";
+    echo "Optimisation de $NAME...";
 
     if [ "$2" != "" ];
     then
@@ -130,14 +130,14 @@ then
     done
     cp $BASE/$1 $BASE/$1.old
 
-    [ $QUIET ] || echo "Repacking apk.."
+    [ $QUIET ] || echo "Repackage des apk.."
     aapt p -0 .dat -0 .dict -F $NAME .
     
     [ $QUIET ] || echo "Resigning with cert: `echo $CERT`"
 
     [ $QUIET ] || echo java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
     java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
-    [ $QUIET ] || echo "Zipalign.."
+    [ $QUIET ] || echo "Zipalign en cours..."
     zipalign -f 4 signed_$NAME $BASE/$1
     if [ ! $QUIET ]; then
         ls -l $BASE/$1.old

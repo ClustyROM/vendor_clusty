@@ -104,8 +104,9 @@ echo
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
+mv $img /datas/www/clust3r.fr/www/dev/
 echo
-echo "Package complete: $OUTFILE"
+echo "ROM ZIP pret: $OUTFILE"
 cat $img.md5sum
 echo
 )
