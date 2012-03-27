@@ -77,7 +77,9 @@ PRODUCT_COPY_FILES += \
 # Term binarry for support for market updates
 PRODUCT_COPY_FILES +=  \
     vendor/clusty/proprietary/Term.apk:system/app/Term.apk \
-    vendor/clusty/proprietary/lib/armeabi/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so 
+    vendor/clusty/proprietary/lib/armeabi/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so \
+	vendor/clusty/proprietary/GooglePlayMusic.apk:system/app/GooglePlayMusic.apk \
+	vendor/clusty/proprietary/Rootexplorer.apk:system/app/RootExplorer.apk
 
 # Term info for nano support
 PRODUCT_COPY_FILES += \
