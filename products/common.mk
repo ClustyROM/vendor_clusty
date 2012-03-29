@@ -21,7 +21,6 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     VisualizationWallpapers \
-    PhaseBeam \
     ClustyBeam \
     HoloSpiralWallpaper \
     NoiseField \

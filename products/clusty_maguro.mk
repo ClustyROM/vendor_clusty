@@ -37,6 +37,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
     vendor/clusty/prebuilt/tuna/Thinkfree.apk:system/app/Thinkfree.apk \
-	vendor/clusty/prebuilt/toro/bootanimation.zip:system/media/bootanimation.zip
-
-
+	vendor/clusty/prebuilt/toro/bootanimation.zip:system/media/bootanimation.zip \
+	vendor/clusty/proprietary/ClockWidgets.apk:system/app/ClockWidgets.apk \
+	vendor/clusty/proprietary/Home_HD_GalaxyNexus.apk:system/app/Home_HD_GalaxyNexus.apk \
+	vendor/clusty/proprietary/WeatherWidget.apk:system/app/WeatherWidget.apk \
+	vendor/clusty/proprietary/WidgetPicker.apk:system/app/WidgetPicker.apk
