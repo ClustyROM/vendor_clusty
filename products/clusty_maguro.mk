@@ -18,13 +18,13 @@ PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES := BUILD_NUMBER=228551
+PRODUCT_BUILD_PROP_OVERRIDES := BUILD_NUMBER=299849
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=yakju \
-    BUILD_ID=IML74K \
+    BUILD_ID=IMM76D \
     BUILD_DISPLAY_ID=ClustyROM-maguro \
-    BUILD_FINGERPRINT="google/yakju/maguro:4.0.2/ICL53F/235179:user/release-keys" \
-    PRIVATE_BUILD_DESC="yakju-user 4.0.2 ICL53F 235179 release-keys"
+    BUILD_FINGERPRINT="google/yakju/maguro:4.0.4/IMM76D/299849:user/release-keys" \
+    PRIVATE_BUILD_DESC="yakju-user 4.0.4 IMM76D 299849 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google \
