@@ -41,7 +41,9 @@ PRODUCT_COPY_FILES +=  \
 	vendor/clusty/proprietary/ClockWidgets.apk:system/app/ClockWidgets.apk \
 	vendor/clusty/proprietary/Home_HD_GalaxyNexus.apk:system/app/Home_HD_GalaxyNexus.apk \
 	vendor/clusty/proprietary/WeatherWidget.apk:system/app/WeatherWidget.apk \
-	vendor/clusty/proprietary/WidgetPicker.apk:system/app/WidgetPicker.apk
+	vendor/clusty/proprietary/WidgetPicker.apk:system/app/WidgetPicker.apk \
+	vendor/clusty/proprietary/GooglePlayMusic.apk:system/app/GooglePlayMusic.apk \
+	vendor/clusty/proprietary/Rootexplorer.apk:system/app/RootExplorer.apk
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
