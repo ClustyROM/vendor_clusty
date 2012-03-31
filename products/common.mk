@@ -10,10 +10,7 @@ PRODUCT_PACKAGES := \
     SoundRecorder \
     FileManager \
     LibertySettings \
-    AppWidgetPicker \
-    Superuser \
-    Superuser.apk \
-    su
+    AppWidgetPicker 
 
 
 # Wallpapers
@@ -50,8 +47,9 @@ PRODUCT_COPY_FILES += \
     vendor/clusty/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/clusty/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/clusty/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/clusty/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk
-
+	vendor/clusty/prebuilt/common/xbin/su:system/bin/su \
+	vendor/clusty/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
+	
 # Google DNS servers and host file
 PRODUCT_COPY_FILES += \
     vendor/clusty/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
@@ -127,7 +125,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=FreeWifi \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.setupwizard.enterprise_mode=1 \
-    ro.modversion=clusty \
+    ro.modversion=clustyROM \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=180
