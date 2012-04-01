@@ -23,7 +23,9 @@ PRODUCT_PACKAGES += \
     NoiseField \
     MagicSmokeWallpapers \
     Clustypapers \
-    Galaxy4 
+    Galaxy4 \
+	su \
+	Superuser
 
 #CM apps - Thanks to the great team over at CyanogenMod we have these awesome apps :)
 PRODUCT_PACKAGES += \
@@ -31,25 +33,6 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf
 
-# init.d support
-PRODUCT_COPY_FILES += \
-    vendor/clusty/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
-    vendor/clusty/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
-    vendor/clusty/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
-    vendor/clusty/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
-    vendor/clusty/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
-    vendor/clusty/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
-    vendor/clusty/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
-    vendor/clusty/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
-    vendor/clusty/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
-    vendor/clusty/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/clusty/prebuilt/common/etc/init_trigger.enabled:system/etc/init_trigger.enabled \
-    vendor/clusty/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
-    vendor/clusty/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/clusty/prebuilt/common/bin/sysinit:system/bin/sysinit \
-	vendor/clusty/prebuilt/common/xbin/su:system/bin/su \
-	vendor/clusty/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
-	
 # Google DNS servers and host file
 PRODUCT_COPY_FILES += \
     vendor/clusty/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
@@ -74,9 +57,7 @@ PRODUCT_COPY_FILES += \
 # Term binarry for support for market updates
 PRODUCT_COPY_FILES +=  \
     vendor/clusty/proprietary/Term.apk:system/app/Term.apk \
-    vendor/clusty/proprietary/lib/armeabi/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so \
-	vendor/clusty/proprietary/GooglePlayMusic.apk:system/app/GooglePlayMusic.apk \
-	vendor/clusty/proprietary/Rootexplorer.apk:system/app/RootExplorer.apk
+    vendor/clusty/proprietary/lib/armeabi/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so 
 
 # Term info for nano support
 PRODUCT_COPY_FILES += \
@@ -122,10 +103,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.android.wifi-watchlist=FreeWifi \
+    ro.com.android.wifi-watchlist="Bouygues Telecom Wifi" \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.setupwizard.enterprise_mode=1 \
-    ro.modversion=clustyROM \
+    ro.modversion=ClustyROM \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=180
