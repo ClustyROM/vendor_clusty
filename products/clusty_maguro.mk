@@ -52,7 +52,7 @@ PRODUCT_COPY_FILES += \
     vendor/clusty/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
     vendor/clusty/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
     vendor/clusty/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
-	vendor/clusty/prebuilt/common/xbin/su:system/bin/su
+	vendor/clusty/prebuilt/common/xbin/su:system/xbin/su
 
 # init.d
 PRODUCT_COPY_FILES += \
