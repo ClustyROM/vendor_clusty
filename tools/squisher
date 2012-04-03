@@ -108,6 +108,7 @@ mv $img /datas/www/clust3r.fr/www/dev/
 echo
 echo "ROM ZIP pret: $OUTFILE"
 cat $img.md5sum
+rm $ANDROID_BUILD_TOP/out/target/product/maguro/system/build.prop
 echo
 )
 
