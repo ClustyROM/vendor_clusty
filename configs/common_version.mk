@@ -16,4 +16,6 @@ else
         ro.cm.version=9.0.0-$(CURRENT_VERSION)
 endif
 
-
+# Camera shutter sound property
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.camera-sound=1
